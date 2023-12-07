@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Confirmation View Controller-->
+        <scene sceneID="6PC-c9-6jk">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ram-Ng-G0b" customClass="ConfirmationViewController" customModule="LH_Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWI-YZ-g4D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQh-Y8-pAL">
+                                <rect key="frame" x="16" y="749" width="382" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.0045389524650000001" blue="0.76394696299999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WpZ-t9-FyP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonTappedWithSender:" destination="Ram-Ng-G0b" eventType="touchUpInside" id="inP-mX-AMK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaz-a8-dOH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lufthansa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBj-pm-Dvp">
+                                        <rect key="frame" x="142" y="64" width="130" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="b77-ba-TRi"/>
+                                            <constraint firstAttribute="height" constant="21" id="v3Z-qL-DHk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.91764705879999997" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0045389524650000001" blue="0.76394696299999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bBj-pm-Dvp" firstAttribute="centerX" secondItem="xaz-a8-dOH" secondAttribute="centerX" id="5Bp-Km-B25"/>
+                                    <constraint firstAttribute="height" constant="100" id="HNW-eN-ytb"/>
+                                    <constraint firstAttribute="bottom" secondItem="bBj-pm-Dvp" secondAttribute="bottom" constant="15" id="mRR-KC-68C"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Ines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I94-hQ-x7p">
+                                <rect key="frame" x="50" y="192" width="314" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32.5" id="ACa-lV-Ywx"/>
+                                    <constraint firstAttribute="width" constant="314" id="IIv-LM-F7p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0045389524650000001" blue="0.76394696299999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your License type is: MBA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et9-nt-Qen">
+                                <rect key="frame" x="50" y="254.5" width="314" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="WWX-rJ-Mg8"/>
+                                    <constraint firstAttribute="height" constant="64" id="qCm-DU-KlX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0045389524650000001" blue="0.76394696299999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ntL-MX-0Qq">
+                                <rect key="frame" x="20" y="368.5" width="374" height="196"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="Mn3-os-bTL"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your list of allowed aircrafts are: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxD-YY-dgU">
+                                <rect key="frame" x="20" y="339" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="phR-Ya-Mny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0045389524650000001" blue="0.76394696299999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rWt-0L-1ur"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="ntL-MX-0Qq" firstAttribute="top" secondItem="et9-nt-Qen" secondAttribute="bottom" constant="50" id="1HC-Th-WMk"/>
+                            <constraint firstItem="rWt-0L-1ur" firstAttribute="trailing" secondItem="xQh-Y8-pAL" secondAttribute="trailing" constant="16" id="3gA-NY-tb8"/>
+                            <constraint firstItem="OxD-YY-dgU" firstAttribute="leading" secondItem="rWt-0L-1ur" secondAttribute="leading" constant="20" id="BO9-0p-0LY"/>
+                            <constraint firstItem="xQh-Y8-pAL" firstAttribute="leading" secondItem="rWt-0L-1ur" secondAttribute="leading" constant="16" id="DfL-kD-v4H"/>
+                            <constraint firstItem="rWt-0L-1ur" firstAttribute="bottom" secondItem="xQh-Y8-pAL" secondAttribute="bottom" constant="65" id="GJy-bQ-h04"/>
+                            <constraint firstItem="xaz-a8-dOH" firstAttribute="leading" secondItem="rWt-0L-1ur" secondAttribute="leading" id="LjB-1J-91P"/>
+                            <constraint firstItem="et9-nt-Qen" firstAttribute="top" secondItem="I94-hQ-x7p" secondAttribute="bottom" constant="30" id="Mgn-Yl-SPn"/>
+                            <constraint firstItem="et9-nt-Qen" firstAttribute="leading" secondItem="rWt-0L-1ur" secondAttribute="leading" constant="50" id="N4X-dP-eeq"/>
+                            <constraint firstItem="rWt-0L-1ur" firstAttribute="trailing" secondItem="OxD-YY-dgU" secondAttribute="trailing" constant="20" id="Z9s-66-ehG"/>
+                            <constraint firstItem="rWt-0L-1ur" firstAttribute="trailing" secondItem="et9-nt-Qen" secondAttribute="trailing" constant="50" id="e6f-yQ-8tW"/>
+                            <constraint firstItem="xaz-a8-dOH" firstAttribute="top" secondItem="vWI-YZ-g4D" secondAttribute="top" id="hLq-Fp-2i2"/>
+                            <constraint firstItem="rWt-0L-1ur" firstAttribute="trailing" secondItem="I94-hQ-x7p" secondAttribute="trailing" constant="50" id="iG1-k2-dg3"/>
+                            <constraint firstItem="rWt-0L-1ur" firstAttribute="trailing" secondItem="ntL-MX-0Qq" secondAttribute="trailing" constant="20" id="n9o-9J-JEb"/>
+                            <constraint firstItem="I94-hQ-x7p" firstAttribute="centerX" secondItem="vWI-YZ-g4D" secondAttribute="centerX" id="qP5-Z8-NBQ"/>
+                            <constraint firstItem="I94-hQ-x7p" firstAttribute="top" secondItem="xaz-a8-dOH" secondAttribute="bottom" constant="92" id="qRC-is-5iD"/>
+                            <constraint firstItem="I94-hQ-x7p" firstAttribute="leading" secondItem="rWt-0L-1ur" secondAttribute="leading" constant="50" id="qzc-H3-Sya"/>
+                            <constraint firstItem="ntL-MX-0Qq" firstAttribute="centerX" secondItem="vWI-YZ-g4D" secondAttribute="centerX" id="sES-h1-MG9"/>
+                            <constraint firstItem="ntL-MX-0Qq" firstAttribute="top" secondItem="OxD-YY-dgU" secondAttribute="bottom" constant="8.5" id="t9n-TC-JXK"/>
+                            <constraint firstItem="ntL-MX-0Qq" firstAttribute="leading" secondItem="rWt-0L-1ur" secondAttribute="leading" constant="20" id="xYr-m5-AVV"/>
+                            <constraint firstItem="xaz-a8-dOH" firstAttribute="trailing" secondItem="rWt-0L-1ur" secondAttribute="trailing" id="xic-so-rpl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aircraftsTextView" destination="ntL-MX-0Qq" id="hwl-zT-YM9"/>
+                        <outlet property="licenseTypeLabel" destination="et9-nt-Qen" id="LJJ-by-3la"/>
+                        <outlet property="logoutButton" destination="xQh-Y8-pAL" id="Lnd-C2-dSj"/>
+                        <outlet property="welcomeLabel" destination="I94-hQ-x7p" id="eBQ-UQ-Nrz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NU2-ow-Rgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273.91304347826087" y="40.848214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
